@@ -1,0 +1,34 @@
+@use 'variable.scss' as*;
+nav ul {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    align-items: center;
+    margin: 0 8rem 0 10rem;
+    padding: 2rem 0 2rem 0;
+}
+
+#logo {
+    text-align: left;
+}
+
+nav ul li {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: $primary;
+    transition: all .5s ease-in-out;
+}
+
+header {
+    box-shadow: 10px 5px 5px #00000029;
+    background-color: $quaternary;
+    position: relative;
+    z-index: 9999;
+}
+
+nav ul li a:hover {
+    color: $tertiary;
+}

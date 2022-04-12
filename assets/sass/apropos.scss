@@ -1,0 +1,59 @@
+@use 'variable.scss' as*;
+#section3 {
+    background-image: url("../img/malvestida-magazine-9UiTvaX_QbU-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 8rem 5rem 8rem;
+    background-position: top 55% right 50%;
+}
+
+#section3 div {
+    width: 700px;
+}
+
+#section3 div p {
+    font-size: 15px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin: 2rem 0 2rem 0;
+    color: $quaternary;
+}
+
+#section4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#section4 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#section4 article {
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+#section4 article p {
+    margin-top: 1rem;
+    color: $secondary;
+    font-size: 15px;
+}
+
+#section5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#section5 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#section5 article {
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+#section5 article p {
+    margin-top: 1rem;
+    color: $secondary;
+    font-size: 15px;
+}

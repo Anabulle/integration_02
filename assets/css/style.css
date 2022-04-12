@@ -1,0 +1,329 @@
+nav ul {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  align-items: center;
+  margin: 0 8rem 0 10rem;
+  padding: 2rem 0 2rem 0;
+}
+
+#logo {
+  text-align: left;
+}
+
+nav ul li {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #6DCED4;
+  transition: all 0.5s ease-in-out;
+}
+
+header {
+  box-shadow: 10px 5px 5px #00000029;
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: 9999;
+}
+
+nav ul li a:hover {
+  color: #EDD066;
+}
+
+h1,
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h1 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  font-size: 75px;
+}
+
+h2 {
+  color: #EDD066;
+}
+
+p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+li {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+#section1 {
+  background-image: url("../img/maria-oswalt-b9AEmlWZpCs-unsplash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 55% bottom 35%;
+  padding: 5rem 8rem 5rem 8rem;
+}
+
+#section1 div {
+  width: 700px;
+}
+
+#section1 div p {
+  margin: 2rem 0 2rem 0;
+}
+
+#section1 p {
+  font-size: 15px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#section1 form a input {
+  background-color: #97dbdf;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#section1 form a input:hover {
+  color: #FFFFFF;
+  background-color: #EDD066;
+}
+
+#section2 {
+  background-color: #539D9F;
+  padding: 2rem 0rem 2rem 2rem;
+}
+
+#section2 figure {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 15rem;
+}
+
+#section3 {
+  background-image: url("../img/malvestida-magazine-9UiTvaX_QbU-unsplash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 8rem 5rem 8rem;
+  background-position: top 55% right 50%;
+}
+
+#section3 div {
+  width: 700px;
+}
+
+#section3 div p {
+  font-size: 15px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  margin: 2rem 0 2rem 0;
+  color: #FFFFFF;
+}
+
+#section4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#section4 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#section4 article {
+  padding: 2rem 3rem 2rem 3rem;
+}
+
+#section4 article p {
+  margin-top: 1rem;
+  color: #539D9F;
+  font-size: 15px;
+}
+
+#section5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#section5 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#section5 article {
+  padding: 2rem 3rem 2rem 3rem;
+}
+
+#section5 article p {
+  margin-top: 1rem;
+  color: #539D9F;
+  font-size: 15px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  box-shadow: 10px -5px 5px #00000029;
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: 9999;
+}
+
+footer #logo2 {
+  width: 45%;
+}
+
+#reseaux ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 10rem;
+  margin: auto;
+}
+
+#reseaux p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #6DCED4;
+}
+
+i {
+  color: #539D9F;
+  transition: all 2s;
+}
+
+#reseaux ul li a i:hover {
+  color: #EDD066;
+}
+
+footer form input {
+  border: 2px solid #539D9F;
+}
+
+footer form input:first-of-type {
+  width: 15rem;
+  height: 2rem;
+}
+
+footer form input:last-of-type {
+  width: 7rem;
+  background-color: #6DCED4;
+  color: #FFFFFF;
+  margin-left: -5px;
+  padding: 9px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+footer form input:last-of-type:hover {
+  background-color: #EDD066;
+  border: 2px solid #b1b12c;
+}
+
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  #section4 article p,
+#section5 article p {
+    font-size: 12px;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 2rem 0 5rem;
+    padding: 2rem 0 2rem 0;
+  }
+
+  footer form input {
+    border: 2px solid #539D9F;
+  }
+
+  footer form input:first-of-type {
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  #section4 article p,
+#section5 article p {
+    font-size: 12px;
+  }
+
+  nav ul {
+    grid-template-columns: 1fr;
+    margin: 0 2rem 0 5rem;
+    padding: 2rem 0 2rem 0;
+    justify-content: center;
+  }
+
+  nav ul li {
+    padding-bottom: 1rem;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  footer form {
+    padding: 1.5rem 0 1.5rem 0;
+  }
+
+  footer a {
+    text-align: center;
+  }
+
+  #section1 {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  #section2 figure {
+    margin-left: 2rem;
+  }
+
+  #section3 {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  #section3 div {
+    width: 100%;
+  }
+
+  #section4,
+#section5 {
+    grid-template-columns: 1fr;
+  }
+
+  #section4 img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #section4 article {
+    padding: 2rem 3rem 2rem 3rem;
+  }
+
+  #section4 article p {
+    margin-top: 1rem;
+    color: #539D9F;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

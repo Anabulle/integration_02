@@ -1,0 +1,61 @@
+@use 'variable.scss' as*;
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 1.5rem 0 1.5rem 0;
+    box-shadow: 10px -5px 5px #00000029;
+    background-color: $quaternary;
+    position: relative;
+    z-index: 9999;
+}
+
+footer #logo2 {
+    width: 45%;
+}
+
+#reseaux ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 10rem;
+    margin: auto;
+}
+
+#reseaux p {
+    font-size: 15px;
+    font-weight: bold;
+    color: $primary;
+}
+
+i {
+    color: $secondary;
+    transition: all 2s;
+}
+
+#reseaux ul li a i:hover {
+    color: $tertiary;
+}
+
+footer form input {
+    border: 2px solid $secondary;
+}
+
+footer form input:first-of-type {
+    width: 15rem;
+    height: 2rem;
+}
+
+footer form input:last-of-type {
+    width: 7rem;
+    background-color: $primary;
+    color: $quaternary;
+    margin-left: -5px;
+    padding: 9px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+footer form input:last-of-type:hover {
+    background-color: $tertiary;
+    border: 2px solid rgb(177, 177, 44);
+}

@@ -1,0 +1,78 @@
+@use 'variable.scss'as*;
+@media screen and (max-width: 900px) {
+    h2 {
+        font-size: 40px;
+    }
+    #section4 article p,
+    #section5 article p {
+        font-size: 12px;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 0 2rem 0 5rem;
+        padding: 2rem 0 2rem 0;
+    }
+    footer form input {
+        border: 2px solid $secondary;
+    }
+    footer form input:first-of-type {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h2 {
+        font-size: 40px;
+    }
+    #section4 article p,
+    #section5 article p {
+        font-size: 12px;
+    }
+    nav ul {
+        grid-template-columns: 1fr;
+        margin: 0 2rem 0 5rem;
+        padding: 2rem 0 2rem 0;
+        justify-content: center;
+    }
+    nav ul li {
+        padding-bottom: 1rem;
+    }
+    footer {
+        grid-template-columns: 1fr;
+    }
+    footer form {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    footer a {
+        text-align: center;
+    }
+    #section1 {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    #section2 figure {
+        margin-left: 2rem;
+    }
+    #section3 {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    #section3 div {
+        width: 100%;
+    }
+    #section4,
+    #section5 {
+        grid-template-columns: 1fr;
+    }
+    #section4 img {
+        width: 100%;
+        object-fit: cover;
+    }
+    #section4 article {
+        padding: 2rem 3rem 2rem 3rem;
+    }
+    #section4 article p {
+        margin-top: 1rem;
+        color: $secondary;
+        font-size: 15px;
+    }
+}
